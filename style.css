@@ -1,0 +1,145 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:0;
+    padding:0;
+    background-color:rgb(25, 186, 240);
+}
+
+/* ----------------------
+Header & navbar all style
+------------------------ */
+.header-container{
+    width:100%;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.nav-logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.nav-menu-bar{
+    width: 25px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align:right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+
+}
+nav ul li a:hover{
+    color:darkblue;
+}
+
+/*------------------------
+ Heading top part all style
+ ------------------------ */
+.heading-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    padding: 20px;
+    background-color:darkblue;
+}
+.heading-text{
+    flex-basis: 40%;
+    position:relative;
+}
+.heading-text h1{
+    font-size:60px;
+    color:white;
+    margin-left: 30px;
+}
+button{
+    width:140px;
+    border: 0;
+    padding:12px 10px;
+    margin-left: 50px;
+    outline: none;
+    color:white;
+    background-color:rgb(25, 186, 240);
+    border-radius:6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width:30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width:160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading-img{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.heading-img .football{
+    width: 100%;
+}
+
+/*------------------------
+ Player card part all style
+ ------------------------ */
+ .row {
+     width:80%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-items: center;
+     justify-content: center;
+ }
+ .player-card{
+     background-color: rgb(160, 248, 248);
+     width: 250px;
+     height: 320px;
+     margin:20px 10px 10px 10px;   
+ }
+ .player-card:hover{
+     box-shadow: 10px 10px 10px  rgb(0, 0, 134);
+     
+
+ }
+ .card-content{
+     padding:15px;
+ }
+ .player-card-img{
+     width: 200px;
+     height: 160px;
+     margin-left: 10px;
+    
+ }
+ .player-card-text{
+     text-align: center;
+
+ }
+ .player-card-text p{
+     font-size: 12px;
+ }
+ 
