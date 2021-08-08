@@ -5,6 +5,7 @@ body{
     background-color:rgb(25, 186, 240);
 }
 
+
 /* ----------------------
 Header & navbar all style
 ------------------------ */
@@ -28,6 +29,7 @@ Header & navbar all style
 .nav-menu-bar{
     width: 25px;
     cursor: pointer;
+    display: none;
 }
 nav{
     flex: 1;
@@ -116,7 +118,7 @@ button:hover{
      justify-content: center;
  }
  .player-card{
-     background-color: rgb(160, 248, 248);
+     background-color: rgb(109, 210, 243);
      width: 250px;
      height: 320px;
      margin:20px 10px 10px 10px;   
@@ -137,9 +139,133 @@ button:hover{
  }
  .player-card-text{
      text-align: center;
+     color:darkblue;
 
  }
  .player-card-text p{
      font-size: 12px;
  }
+
+ /*------------------------
+ Top players list part all style
+ ------------------------ */
+ .top-heading{
+     text-align: center;
+     color:white;
+     font-size:30px;
+ }
+ .top-players{
+     background-color:darkblue;
+     width: 807px;
+    margin: 50px auto;
+    
+    
+ }
+ .top-players:hover{
+    box-shadow: 10px 10px 30px rgb(213, 245, 255);
+ }
+ .players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 30px;
+    
+}
+.player img{
+   width:56px;
+   height:56px;
+   border-radius: 50px;
+}
+.player h3{
+    color: #fff;
+    margin-left: 20px;
+}
+
+/*------------------------
+ Top blogs part all style
+ ------------------------ */
+ 
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-row-gap:26px;
+     margin-left: 200px;
+     margin-right: 200px;
+
+ }
+ .blog{
+     display: flex;
+    
+ }
+ .blog .thumbnail img{
+     width: 177px;
+     height:117px;
+ }
+ .blog-info{
+     margin-left: 20px;
+     color:darkblue;
+ }
+ .blog-title{
+     font-size:20px;
+     
+ }
+ 
+ .social-icon{
+     cursor: pointer;
+     text-align: center;
+     margin: 80px 60px 40px ;
+     padding: 20px;
+     color:darkblue;
+ }
+
+/*------------------------
+ Footer part all style
+ ------------------------ */
+footer p{
+    color:white;
+    text-align:center;
+}
+ /*------------------------
+      Media Queries
+ ------------------------ */
+ /*---For mobile devices---*/
+ @media only screen and (max-width:688px){
+     /* for navbar */
+     nav ul{
+         width:100%;
+         position: absolute;
+         top: 75px;
+         right: 0;
+         z-index: 2;
+     }
+     nav ul li{
+         display: block;
+         margin-top:0;
+         margin-bottom: 10px;
+     }
+     .nav-menu-bar{
+        display: block;
+    }
+    /* for top heading */
+    .heading-container{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    /* for top players & blogs */
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+     }
+     
+     
+ 
+
  
